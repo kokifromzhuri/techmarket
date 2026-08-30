@@ -21,12 +21,6 @@ app.mount(
     name="product-images",
 )
 
-app.mount(
-    "/products",
-    StaticFiles(directory="../frontend/public/products"),
-    name="product-images",
-)
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
