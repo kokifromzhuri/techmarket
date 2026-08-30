@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://techmarket-nrdr.onrender.com";
 
 function CheckoutPage({ cart }) {
   const navigate = useNavigate();

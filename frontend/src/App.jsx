@@ -28,7 +28,7 @@ function ProductCard({ product, addToCart }) {
         )}
 
         <img
-          src={"http://127.0.0.1:8000" + product.image_url}
+          src={"https://techmarket-nrdr.onrender.com" + product.image_url}
           alt={product.name}
           className="product-image"
         />
@@ -108,7 +108,7 @@ function Home() {
   };
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/products")
+    fetch("https://techmarket-nrdr.onrender.com/products")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Products API error");
